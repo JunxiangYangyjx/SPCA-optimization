@@ -1,0 +1,43 @@
+# --- Python 通用忽略 ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+.venv/
+
+# --- Ansys Electronics Desktop (AEDT) 专用忽略 ---
+# 忽略仿真结果文件夹 (体积巨大，包含网格和场数据)
+*.aedtresults/
+*.aedb/
+
+# 忽略锁文件 (Ansys 运行时产生)
+*.lock
+*.auto
+*.lock_file
+
+# 忽略 Ansys 的自动备份和恢复文件
+*.undo
+*.recovery
+
+# --- PyAEDT 专用忽略 ---
+# PyAEDT 产生的日志文件夹
+.pyaedt/
+
+# --- 项目特定忽略 ---
+# 忽略你的代码中生成的临时结果文件夹
+temp_results/
+
+# 忽略生成的日志文件
+*.log
+
+# 忽略临时产生的 CSV 数据 (如果你想保留示例数据，可以在这里把 .csv 去掉)
+# *.csv
+
+# --- IDE 编辑器忽略 (VS Code / PyCharm) ---
+.vscode/
+.idea/
+*.swp
