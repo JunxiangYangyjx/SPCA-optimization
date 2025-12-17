@@ -1,2 +1,3 @@
 # SPCA-optimization
 FEM simulation based optimization algorithm to optimize the SPCA
+To deploy this framework, a Windows operating system with a valid installation of Ansys Electronics Desktop (e.g., version 2023.1) is required, as the automation relies on the Windows COM interface to control the Maxwell solver. The Python environment requires numpy and pandas for data processing, pymoo for the optimization logic, and pyaedt for the direct simulation interface. The codebase is designed for robustness in long-running tasks, featuring built-in error handling, automatic session management, and rigorous resource release mechanisms to prevent memory leaks during batch simulations.
